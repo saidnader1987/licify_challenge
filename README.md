@@ -44,9 +44,12 @@ This document provides the necessary steps to set up and run the backend and fro
 
 4. **Start the Backend:**
    To start the backend server in production mode, run:
+
    ```bash
    npm run start:prod
    ```
+
+   In the `./backend` directory, you'll find `Licify.postman_collection.json`, which can be used for testing the backend with Postman. The Postman collection documentation can be accessed at [Licify Postman Collection](https://documenter.getpostman.com/view/26744671/2s9YsGjDgq).
 
 ## Frontend Setup
 
