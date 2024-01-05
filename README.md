@@ -69,7 +69,7 @@ This document provides the necessary steps to set up and run the backend and fro
 
 ## Running with Docker
 
-To run the project using Docker, make sure you have Docker and Docker Compose installed on your system. Then, in the root directory of the project, run:
+To run the project using Docker, make sure you have Docker and Docker Compose installed on your system. Then, in the root directory of the project, provided you already created the `config.env` file in the root of the backend directory, run:
 
 ```bash
 docker compose up
