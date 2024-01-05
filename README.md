@@ -44,10 +44,9 @@ This document provides the necessary steps to set up and run the backend and fro
      "importData": "node ./dev-data/data/import-dev-data.js --import",
      "deleteData": "node ./dev-data/data/import-dev-data.js --delete"
    }
+   ```
 
    If you imported the data, all user passwords in `dev-data/data/users.json` are set to `Prueb@123`.
-
-   ```
 
 4. **Start the Backend:**
    To start the backend server in production mode, run:
