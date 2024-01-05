@@ -26,21 +26,28 @@ This document provides the necessary steps to set up and run the backend and fro
    Replace the placeholders with your specific environment values.
 
 3. **Mock Data Management:**
-   If you wish to delete and import some mock data, run this commands in order:
+   The database comes pre-populated with sample data to help you get started. If you need to reset the database to its initial state with the mock data or clear it entirely, you can use the following npm scripts:
 
-   ```bash
-   npm run deleteData
-   npm run importData
-   ```
+   - To **delete existing data** and start with a clean database, run:
+     ```bash
+     npm run deleteData
+     ```
+   - To **re-import the mock data** after cleaning the database, run:
+     ```bash
+     npm run importData
+     ```
 
-   The scripts can be found in the `package.json` file under scripts:
+   These commands are defined in your `package.json` and can be located under the `scripts` section:
 
    ```json
-   "importData": "node ./dev-data/data/import-dev-data.js --import",
-   "deleteData": "node ./dev-data/data/import-dev-data.js --delete"
-   ```
+   "scripts": {
+     "importData": "node ./dev-data/data/import-dev-data.js --import",
+     "deleteData": "node ./dev-data/data/import-dev-data.js --delete"
+   }
 
    If you imported the data, all user passwords in `dev-data/data/users.json` are set to `Prueb@123`.
+
+   ```
 
 4. **Start the Backend:**
    To start the backend server in production mode, run:
