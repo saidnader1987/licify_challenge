@@ -1,0 +1,87 @@
+[
+  {
+    "_id": "5c8a34ed14eb5c17645c9108",
+    "quantity": 1000,
+    "quantityUnit": "m3",
+    "description": "Excavación mecánica",
+    "price": 6000
+  },
+  {
+    "_id": "5c8a355b14eb5c17645c9109",
+    "quantity": 500,
+    "quantityUnit": "m2",
+    "description": "Compactación de subrasante",
+    "price": 2900
+  },
+  {
+    "_id": "5c8a359914eb5c17645c910a",
+    "quantity": 5000,
+    "quantityUnit": "ml",
+    "description": "Sardinel A10",
+    "price": 95000
+  },
+  {
+    "_id": "5c8a35b614eb5c17645c910b",
+    "quantity": 400,
+    "quantityUnit": "m3",
+    "description": "Concreto 4000 psi",
+    "price": 750000
+  },
+  {
+    "_id": "5c8a364c14eb5c17645c910c",
+
+    "quantity": 300,
+    "quantityUnit": "m3",
+    "description": "Concreto 5000 psi",
+    "price": 780000
+  },
+  {
+    "_id": "5c8a368c14eb5c17645c910d",
+    "quantity": 560,
+    "quantityUnit": "m3",
+    "description": "Concreto 3000 psi",
+    "price": 720000
+  },
+  {
+    "_id": "5c8a368c14eb5c17645c910e",
+    "quantity": 1000,
+    "quantityUnit": "ml",
+    "description": "Bordillo A80",
+    "price": 93500
+  },
+  {
+    "_id": "5c8a368c14eb5c17645c910f",
+    "quantity": 12500,
+    "quantityUnit": "m3",
+    "description": "Base Granular Tipo A",
+    "price": 145000
+  },
+  {
+    "_id": "5c8a379a14eb5c17645c9110",
+    "quantity": 1200,
+    "quantityUnit": "m3",
+    "description": "Base Granular Tipo B",
+    "price": 135000
+  },
+  {
+    "_id": "5c8a37b114eb5c17645c9111",
+    "quantity": 3000,
+    "quantityUnit": "m3",
+    "description": "Mezcla asfáltica tipo MD12",
+    "price": 920000
+  },
+  {
+    "_id": "5c8a37cb14eb5c17645c9112",
+    "quantity": 2400,
+    "quantityUnit": "m3",
+    "description": "Mezcla asfáltica tipo MD20",
+    "price": 900000
+  },
+  {
+    "_id": "5c8a37dd14eb5c17645c9113",
+    "quantity": 10000,
+    "quantityUnit": "m2",
+    "description": "Imprimación con emulsión asfáltica",
+    "price": 2500
+  }
+]

@@ -1,0 +1,562 @@
+{
+	"info": {
+		"_postman_id": "9ec61292-efb4-4eea-bba2-66d34c9f6552",
+		"name": "Licify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26744671"
+	},
+	"item": [
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Get Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/projects/5c88fa8cf4afda39709c2958",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"projects",
+								"5c88fa8cf4afda39709c2958"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Projects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/projects",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"projects"
+							],
+							"query": [
+								{
+									"key": "role",
+									"value": "user",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Mantenimiento de Troncaleshh",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "2023-01-01",
+									"type": "text"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-12-31",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/Users/saidnader/Documents/Skill learning/Programming/licify_challenge/backend/dev-data/resized-imgs/project-4-3.jpg"
+								},
+								{
+									"key": "items[0][quantity]",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "items[0][quantityUnit]",
+									"value": "m3",
+									"type": "text"
+								},
+								{
+									"key": "items[0][description]",
+									"value": "Excavación mecánica",
+									"type": "text"
+								},
+								{
+									"key": "items[0][price]",
+									"value": "8000",
+									"type": "text"
+								},
+								{
+									"key": "items[1][quantity]",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "items[1][quantityUnit]",
+									"value": "m2",
+									"type": "text"
+								},
+								{
+									"key": "items[1][description]",
+									"value": "Compactación de subrasante",
+									"type": "text"
+								},
+								{
+									"key": "items[1][price]",
+									"value": "3500",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/projects",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project Quotations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/projects/5c88fa8cf4afda39709c2958/quotations",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"projects",
+								"5c88fa8cf4afda39709c2958",
+								"quotations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project Supplier Quotation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/projects/5c88fa8cf4afda39709c2958/users/5c8a1f4e2f8fb814b56fa185/quotations",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"projects",
+								"5c88fa8cf4afda39709c2958",
+								"users",
+								"5c8a1f4e2f8fb814b56fa185",
+								"quotations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Quotations",
+			"item": [
+				{
+					"name": "Get Quotation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/quotations/5c8a39b614eb5c17645c9123",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"quotations",
+								"5c8a39b614eb5c17645c9123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Quotations (Admin-only route)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/quotations",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"quotations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Quotation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"project\": \"5c88fa8cf4afda39709c2955\",\n    \"items\":[\n        {\n            \"item\": \"5c8a34ed14eb5c17645c9108\",\n            \"quotedPrice\": 6500\n        },\n        {\n            \"item\": \"5c8a355b14eb5c17645c9109\",\n            \"quotedPrice\": 6500\n        },\n        {\n            \"item\": \"5c8a359914eb5c17645c9109\",\n            \"quotedPrice\": 6500\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/quotations",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"quotations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get User Projects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/5c8a1f292f8fb814b56fa184/projects",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"5c8a1f292f8fb814b56fa184",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User (Admin-only route)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/5c8a1f292f8fb814b56fa184",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"5c8a1f292f8fb814b56fa184"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users  (Admin-only route)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User  (Admin-only route)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"name\": \"Eberto Burgos\",\n    \"company\": \"Conaco\",\n    \"role\": \"admin\",\n    \"email\": \"eberto@hotmail.com\",\n    \"password\": \"{{password}}\",\n    \"passwordConfirm\": \"{{password}}\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Sign Up User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"jwt\", pm.response.json().token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Said\",\n    \"company\": \"Alianza YDN\",\n    \"role\": \"constructor\",\n    \"email\": \"said@gmail.com\",\n    \"password\": \"{{password}}\",\n    \"passwordConfirm\": \"{{password}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/users/signup",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log In User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"jwt\", pm.response.json().token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin@gmail.com\",\n    \"password\": \"{{password}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/users/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

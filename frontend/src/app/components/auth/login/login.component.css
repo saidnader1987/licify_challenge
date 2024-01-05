@@ -1,0 +1,143 @@
+.sign-up-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  height: 100%;
+}
+
+.welcome-container {
+  padding: 0px 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome-container__text {
+  color: #0f2a71;
+  text-align: center;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.welcome-container__logo {
+  height: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 150px 12px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #001740;
+}
+
+input {
+  border: 1px solid #b8b8b8;
+  background: #f6f6f6;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #858585;
+}
+
+.input-error {
+  color: #ff4a4a;
+  border: 1px solid #ff4a4a;
+}
+
+input:focus {
+  box-shadow: none;
+  color: #858585;
+}
+
+.alert-text {
+  color: #001740;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn-custom {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 4px;
+  background: #f4c400;
+  border: none;
+  padding: 8px 12px;
+  color: #0f2a71;
+  font-size: 14px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 46px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.form-group__password,
+.form-group__confirmPassword {
+  position: relative;
+}
+
+.cta-btn {
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  background: #f4c400;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.cta-btn span {
+  color: #0f2a71;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cta-btn:not(.cta-btn--inactive):hover {
+  background: #ffdb60;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid transparent;
+}
+
+.cta-btn--inactive {
+  border-radius: 4px;
+  border: 1px solid #0f2a71;
+  background: #fffdf0;
+  cursor: default;
+}
+
+.cta-btn--inactive span {
+  color: #0f2a71;
+}

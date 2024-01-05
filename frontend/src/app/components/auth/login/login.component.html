@@ -1,0 +1,87 @@
+<div class="sign-up-section">
+  <div class="welcome-container">
+    <div>
+      <img
+        class="welcome-container__logo"
+        src="assets/img/logo-2.png"
+        alt="logo"
+      />
+    </div>
+    <div>
+      <span class="welcome-container__text">BIENVENIDO</span>
+    </div>
+  </div>
+
+  <div>
+    <form
+      [formGroup]="loginForm"
+      (ngSubmit)="login(loginForm)"
+      class="container mt-4"
+    >
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input
+          type="email"
+          [ngClass]="{
+            'input-error':
+              loginForm.controls['email'].invalid &&
+              loginForm.controls['email'].touched
+          }"
+          id="email"
+          formControlName="email"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            loginForm.get('email')?.hasError('required') &&
+            loginForm.get('email')?.touched
+          "
+          class="alert-text"
+        >
+          El correo es requerido
+        </div>
+        <div
+          *ngIf="loginForm.get('email')?.hasError('invalidEmail')"
+          class="alert-text"
+        >
+          No es un correo válido
+        </div>
+      </div>
+
+      <div class="form-group form-group__password">
+        <label for="password">Contraseña</label>
+        <input
+          type="{{ showPassword ? 'text' : 'password' }}"
+          [ngClass]="{
+            'input-error':
+              loginForm.controls['password'].invalid &&
+              loginForm.controls['password'].touched
+          }"
+          id="password"
+          formControlName="password"
+          class="form-control"
+        />
+        <img
+          src="assets/icons/eye-icon.svg"
+          alt="Show/Hide password"
+          class="toggle-password logo-error"
+          (click)="togglePasswordVisibility()"
+        />
+        <div
+          *ngIf="
+            loginForm.get('password')?.hasError('required') &&
+            loginForm.get('password')?.touched
+          "
+          class="alert-text"
+        >
+          La contraseña es requerida
+        </div>
+      </div>
+
+      <button type="submit" [disabled]="!loginForm.valid" class="cta-btn">
+        <span> Inicia sesión </span>
+        <img src="assets/icons/go-icon.svg" />
+      </button>
+    </form>
+  </div>
+</div>

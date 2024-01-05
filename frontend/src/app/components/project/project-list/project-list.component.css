@@ -1,0 +1,145 @@
+.section-container {
+  padding: 33px 150px;
+}
+
+.header-container {
+  display: flex;
+  padding: 28px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  border-radius: 12px;
+  background: #fff5d4;
+}
+
+.header-container__heading {
+  color: #0f2a71;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header-container__text,
+.projects-container__text {
+  color: #001740;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cta-btn {
+  display: flex;
+  width: 220px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  background: #f4c400;
+  border: none;
+  transition: all 0.3s;
+}
+
+.cta-btn--large {
+  height: 58px;
+}
+
+.cta-btn span {
+  color: #0f2a71;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cta-btn:hover {
+  background: #ffdb60 !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid transparent;
+}
+
+.projects-container {
+  margin-top: 32px;
+}
+
+.projects-container__heading {
+  color: #0f2a71;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.projects-container__projects {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-container__project {
+  border-radius: 12px;
+  background: #fff5d4;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  min-width: 300px;
+  max-width: 350px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-container__project-img img {
+  width: 100%;
+  max-height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.project-container__project-heading {
+  color: #0f2a71;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.project-container__project-heading span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.project-container__project-btn {
+  display: flex;
+}
+
+.project-container__project-btn button {
+  flex-grow: 1;
+  cursor: pointer;
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  background: #f4c400;
+  border: none;
+}
+
+.project-container__project-btn button span {
+  color: #0f2a71;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
