@@ -1,0 +1,49 @@
+<div class="section-container">
+  <div class="header-container">
+    <span class="header-container__heading">Hola {{ userName }}</span>
+    <span class="header-container__text">{{
+      userRole === "constructor"
+        ? "A continuación encontrarás una lista de tus proyectos"
+        : "Inicia a cotizar proyectos!"
+    }}</span>
+    <button
+      *ngIf="userRole === 'constructor'"
+      routerLink="/proyectos/crear"
+      class="cta-btn cta-btn--large"
+    >
+      <span>Agregar proyecto</span>
+      <img src="assets/icons/add-icon.svg" alt="add" />
+    </button>
+  </div>
+
+  <div class="projects-container">
+    <span class="projects-container__heading">Proyectos</span>
+    <hr />
+    <span
+      class="projects-container__text"
+      *ngIf="userRole === 'constructor' && projects.length === 0"
+      >Aún no tienes proyectos registrados</span
+    >
+    <span
+      class="projects-container__text"
+      *ngIf="userRole === 'proveedor' && projects.length === 0"
+      >Aún no existen proyectos que cotizar</span
+    >
+    <div class="projects-container__projects">
+      <div *ngFor="let project of projects" class="project-container__project">
+        <div class="project-container__project-heading">
+          <span>{{ project.name }}</span>
+        </div>
+        <div class="project-container__project-img">
+          <img [src]="imageUrl + project.images[0]" alt="project-image" />
+        </div>
+        <div class="project-container__project-btn">
+          <button [routerLink]="'/proyectos/' + project._id" class="cta-btn">
+            <span> Ver Proyecto </span>
+            <img src="assets/icons/go-icon.svg" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

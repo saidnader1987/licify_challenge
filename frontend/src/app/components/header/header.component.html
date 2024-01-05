@@ -1,0 +1,34 @@
+<nav class="navbar-custom">
+  <div class="brand-container">
+    <a class="navbar-brand" routerLink="/">
+      <img src="assets/img/logo.png" alt="logo" style="height: 30px" />
+    </a>
+  </div>
+
+  <div class="auth-container ml-auto" *ngIf="!isAuthenticated">
+    <div
+      routerLink="/auth/login"
+      routerLinkActive="auth-button--active"
+      class="auth-button"
+    >
+      <a>LOG IN</a>
+    </div>
+    <div
+      routerLink="/auth/signup"
+      routerLinkActive="auth-button--active"
+      class="auth-button"
+    >
+      <a>SIGN UP</a>
+    </div>
+  </div>
+  <div class="auth-container ml-auto" *ngIf="isAuthenticated">
+    <div class="company-name">
+      <span>{{ userCompany }}</span>
+    </div>
+
+    <div (click)="onLogOut()" class="auth-button logout-container">
+      <a>LOG OUT</a>
+      <img src="assets/icons/logout-icon.svg" alt="logout" />
+    </div>
+  </div>
+</nav>

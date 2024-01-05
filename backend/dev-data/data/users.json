@@ -1,0 +1,101 @@
+[
+  {
+    "_id": "5c8a1d5b0190b214360dc057",
+    "name": "Said Nader",
+    "company": "Alianza YDN",
+    "role": "admin",
+    "email": "admin@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  },
+  {
+    "_id": "5c8a1dfa2f8fb814b56fa181",
+    "name": "Jose Hernandez",
+    "company": "Yamil Sabbagh Construcciones",
+    "role": "constructor",
+    "email": "jose@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  },
+  {
+    "_id": "5c8a1e1a2f8fb814b56fa182",
+    "name": "Juan Camilo Sabbagh",
+    "company": "Conconcreto",
+    "role": "constructor",
+    "email": "juan@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  },
+  {
+    "_id": "5c8a1ec62f8fb814b56fa183",
+    "name": "Dario Ramirez",
+    "company": "Amarilo",
+    "role": "constructor",
+    "email": "dario@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  },
+  {
+    "_id": "5c8a1f292f8fb814b56fa184",
+    "name": "Patricia Marquez",
+    "company": "Construcciones y pavimentos LTDA",
+    "role": "constructor",
+    "email": "patricia@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  },
+  {
+    "_id": "5c8a1f4e2f8fb814b56fa185",
+    "name": "Paula Rozo",
+    "company": "Titán",
+    "role": "proveedor",
+    "email": "paula@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  },
+  {
+    "_id": "5c8a201e2f8fb814b56fa186",
+    "name": "Andres Arias",
+    "company": "Cemex",
+    "role": "proveedor",
+    "email": "andres@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  },
+  {
+    "_id": "5c8a20d32f8fb814b56fa187",
+    "name": "Alan Genes",
+    "company": "Holcim",
+    "role": "proveedor",
+    "email": "alan@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  },
+  {
+    "_id": "5c8a211f2f8fb814b56fa188",
+    "name": "Juan Velazquez",
+    "company": "Mexichem",
+    "role": "proveedor",
+    "email": "juanv@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  },
+  {
+    "_id": "5c8a21d02f8fb814b56fa189",
+    "name": "Maria Quintero",
+    "company": "Concretarte",
+    "role": "proveedor",
+    "email": "maria@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  },
+  {
+    "_id": "5c8a21d02f8fb814b56fa190",
+    "name": "David correa",
+    "company": "Oxigas, Gasfer, Agafano y Asociados Consultores LTDA",
+    "role": "proveedor",
+    "email": "david@gmail.com",
+    "password": "Prueb@123",
+    "passwordConfirm": "Prueb@123"
+  }
+]

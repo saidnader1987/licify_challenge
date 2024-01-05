@@ -1,0 +1,50 @@
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #001740;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #f4c400;
+}
+
+.auth-container {
+  display: flex;
+  gap: 10px;
+  font-weight: 800;
+  align-items: center;
+}
+
+.auth-button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.auth-button--active {
+  background-color: #f4c400;
+  color: #001740;
+  cursor: default;
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.company-name {
+  display: flex;
+  gap: 10px;
+  color: #fffdf0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-right: 2px solid #fffdf0;
+  padding-right: 22px;
+}
