@@ -72,7 +72,7 @@ This document provides the necessary steps to set up and run the backend and fro
 To run the project using Docker, make sure you have Docker and Docker Compose installed on your system. Then, in the root directory of the project, run:
 
 ```bash
-docker-compose up
+docker compose up
 ```
 
 Once the services are up and running, open your browser and go to [127.0.0.1](http://127.0.0.1) to start using the app.
